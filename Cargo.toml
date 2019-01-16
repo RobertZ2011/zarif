@@ -1,0 +1,8 @@
+[package]
+name = "zarif"
+version = "0.1.0"
+authors = ["Robert Zieba <robert@zieba.site>"]
+edition = "2018"
+
+[dependencies]
+num-complex = "0.2"
