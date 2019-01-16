@@ -19,8 +19,8 @@ pub trait Matrix<T: Numeric, N: Dimension, M: Dimension>:
     Mul +
     Mul<T> +
     MulAssign +
-    MulASsign<T> +
+    MulAssign<T> +
     Neg {
     fn get_row_count(&self) -> usize;
-    fn get_col_count(&self) -> usize;
+    fn get_col_count(&self) -> usize; 
 }

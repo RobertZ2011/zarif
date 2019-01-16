@@ -1,0 +1,2 @@
+Zarif is a linear algebra abstraction library written in rust. Its goal is to allow the writting of idiomatic rust code for linear algebra
+that can be effortlessly run through different computational backends.

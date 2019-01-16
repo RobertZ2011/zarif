@@ -1,19 +1,19 @@
-enum Dynamic {}
-enum D1 {}
-enum D2 {}
-enum D3 {}
-enum D4 {}
-enum D5 {}
-enum D6 {}
-enum D7 {}
-enum D8 {}
-enum D9 {}
-enum D10 {}
-enum D11 {}
-enum D12 {}
-enum D13 {}
-enum D14 {}
-enum D15 {}
+pub enum Dynamic {}
+pub enum D1 {}
+pub enum D2 {}
+pub enum D3 {}
+pub enum D4 {}
+pub enum D5 {}
+pub enum D6 {}
+pub enum D7 {}
+pub enum D8 {}
+pub enum D9 {}
+pub enum D10 {}
+pub enum D11 {}
+pub enum D12 {}
+pub enum D13 {}
+pub enum D14 {}
+pub enum D15 {}
 
 pub trait Dimension {
     fn static_size() -> usize;

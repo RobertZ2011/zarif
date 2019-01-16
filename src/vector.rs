@@ -1,25 +1,10 @@
-use crate::dimension::Dimension;
+use crate::dimension::{Dimension, D1};
 use crate::numeric::Numeric;
-use std::ops::{
-    Add,
-    AddAssign,
-    Mul,
-    MulAssign,
-    Sub,
-    SubAssign,
-    Neg
-};
+use crate::matrix::Matrix;
 
-pub trait Vector<T: Numeric, D: Dimension>:
-    Sized +
-    Add +
-    AddAssign +
-    Sub +
-    SubAssign +
-    Mul +
-    Mul<T> +
-    MulAssign +
-    MulASsign<T> +
-    Neg {
+pub trait Vector<T: Numeric, D: Dimension>: Matrix<T, D, D1> {
     fn get_size(&self) -> usize;
+    fn norm(&self) -> T::BasicType;
+    fn normalize(&mut self);
+    fn normalized(&self) -> Self;
 }
